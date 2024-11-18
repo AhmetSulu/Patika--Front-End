@@ -1,0 +1,178 @@
+/* General Settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* New Button Design */
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2a2b2c;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004a99;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.button:active {
+    background-color: #003366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Prevents footer overlap */
+}
+
+/* Article Styling */
+article {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container Layout */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 10px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Social Media Buttons */
+.social-media {
+    position: fixed;
+    top: 90%;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Social Media Button Styling */
+.social-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific Social Media Colors */
+.social-button.github {
+    background-color: #333; 
+}
+
+.social-button.x {
+    background-color: #333; 
+}
+.social-button.instagram {
+    background-color: #333; 
+}
+
+.social-button.linkedin {
+    background-color: #333;
+}
+
+.social-button:hover {
+    background-color: #333;
+}

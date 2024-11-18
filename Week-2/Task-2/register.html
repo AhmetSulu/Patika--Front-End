@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kayıt Formu</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .container {
+                text-align: center;
+            }
+            #survey-form {
+                background: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                width: 350px;
+                margin-top: 20px;
+                text-align: left;
+            }
+            h1 {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #666;
+                margin-bottom: 20px;
+            }
+            label {
+                display: block;
+                margin: 10px 0 5px;
+                color: #333;
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            select,
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+                margin-right: 10px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                padding: 12px;
+                background-color: #28a745;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+            .section-title {
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            .option-label {
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Kayıt Formu</h1>
+            <p id="description">Lütfen aşağıdaki formu doldurun.</p>
+            
+            <form id="survey-form">
+                <label id="name-label" for="name">İsim:</label>
+                <input id="name" type="text" placeholder="İsminizi girin" required>
+                
+                <label id="email-label" for="email">E-posta:</label>
+                <input id="email" type="email" placeholder="E-posta adresinizi girin" required>
+                
+                <label id="number-label" for="number">Yaş:</label>
+                <input id="number" type="number" min="1" max="100" placeholder="Yaşınızı girin" required>
+                
+                <label for="dropdown">Cinsiyet:</label>
+                <select id="dropdown">
+                    <option disabled selected value>Seçiniz</option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+                
+                <label class="section-title">Katılım Durumu:</label>
+                <label class="option-label">
+                    <input type="radio" name="participation" value="yes" required> Evet
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="participation" value="no" required> Hayır
+                </label>
+                
+                <label class="section-title">İlgi Alanları:</label>
+                <label class="option-label">
+                    <input type="checkbox" name="interest" value="coding"> Kodlama
+                </label>
+                <label class="option-label">
+                    <input type="checkbox" name="interest" value="music"> Müzik
+                </label>
+                
+                <label for="comments">Ek Yorumlar:</label>
+                <textarea id="comments" placeholder="Yorumlarınızı buraya yazın"></textarea>
+                
+                <input id="submit" type="submit" value="Gönder">
+            </form>
+        </div>
+    </body>
+    </html>
