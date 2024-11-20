@@ -1,0 +1,94 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Sayfanın yüksekliğini 100vh yapıyoruz */
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #2d353a; 
+    color: white; 
+    padding: 40px 0;
+    text-align: center;
+}
+
+.jumbotron .display-4 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.jumbotron .lead {
+    font-size: 1.25em;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Social Media Styling */
+.social-media .btn {
+    border-radius: 60%;
+    padding: 10px;    
+    font-size: 1em; 
+    transition: transform 0.3s;
+}
+
+.social-media .btn:hover {
+    transform: scale(1.1);
+}
+
+.social-media {
+    position: fixed;
+    bottom: 50px;
+    right: 10px; 
+    display: flex;
+    gap: 15px;
+}
+
+/* Card Image */
+.card-img-top {
+    height: 420px;
+    object-fit: cover;
+}
+
+
+.card-body .btn {
+    margin-top: 10px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
