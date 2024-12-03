@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LandingPage</title>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen justify-between">
+    <div class="flex flex-col w-full max-w-screen-xl px-6 mx-auto flex-grow">
+      <!-- Header -->
+      <header class="w-full">
+        <nav class="mt-4 p-6 bg-white shadow-lg flex justify-between items-center">
+          <div class="logo">
+            <a href="#">
+              <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Logo" />
+            </a>
+          </div>
+          <div class="flex space-x-6 text-lg font-medium">
+            <a href="#" class="hover:text-indigo-600">Home</a>
+            <a href="#" class="hover:text-indigo-600">About</a>
+            <a href="#" class="hover:text-indigo-600">Features</a>
+            <button class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Sign Up</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+     <div class="flex flex-col md:flex-row justify-center items-center px-6 py-20 bg-white rounded-xl shadow-lg mt-10">
+       <div class="max-w-xl text-center md:text-left">
+      <h4 class="text-indigo-500 font-semibold">Mamba Design System</h4>
+      <h1 class="text-5xl font-extrabold mt-4 mb-6">Build it with <span class="text-indigo-600">Mamba</span></h1>
+      <p class="text-lg mb-8">Modular and versatile. The ultimate design toolkit for savvy technology startups.</p>
+      <div class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg border border-gray-300 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+        <button class="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">Join the Waitlist</button>
+      </div>
+        </div>
+       <div class="flex-shrink-0 hidden md:block">
+      <img class="rounded-xl shadow-lg mx-6" src="https://picsum.photos/id/35/600/500" alt="Landing Image" />
+     </div>
+      </div>
+  
+ 
+
+      <!-- Main Content -->
+      <section class="my-12 text-center">
+        <h4 class="text-indigo-500 font-semibold">HOW IT WORKS</h4>
+        <h2 class="text-4xl font-extrabold mt-4">Building with Mamba is Simple</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 px-6">
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+            <p class="mt-6 text-lg font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa ratione expedita amet.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+            <p class="mt-6 text-lg font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa ratione expedita amet.</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+            <p class="mt-6 text-lg font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa ratione expedita amet.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Article Section -->
+      <section class="my-16 flex justify-center gap-16 px-6">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-lg text-center">
+          <img class="rounded-full w-24 h-24 mx-auto" src="https://picsum.photos/id/66/120/120" alt="CEO Image" />
+          <p class="italic text-lg mt-6 mb-4">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aliquam eligendi, nesciunt tempore animi quia!"</p>
+          <p class="text-gray-500">Leroy Jenkins</p>
+          <p class="text-gray-500 font-semibold">CEO of Company Co.</p>
+        </div>
+        <div class="flex-shrink-0 max-w-lg">
+          <img class="rounded-xl shadow-lg" src="https://picsum.photos/id/34/767/600" alt="Product Image" />
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="bg-white py-12 text-center rounded-xl shadow-lg">
+        <h3 class="text-4xl font-bold text-gray-900 mb-4">Create with Us</h3>
+        <p class="text-lg text-gray-600 mb-8 px-10 max-w-3xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illum repellendus nulla culpa officia, placeat facilis explicabo temporibus aut minima aliquid modi ratione nesciunt corrupti? Voluptates natus quas quis voluptatem?</p>
+      </section>
+      
+
+      <!-- Business Section -->
+      <section class="my-16 grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+    <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img class="w-full h-full object-cover" src="https://picsum.photos/id/55/800/500" alt="Business Image" />
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <button class="py-2 px-6 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 transition">Business</button>
+          <h3 class="py-5 text-4xl font-semibold text-center">Curating a workplace that inspires team movement</h3>
+          <p class="text-gray-500 text-center">November 30, 2020 <br /> By Leroy Jenkins</p>
+        </div>
+    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 px-6">
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <span class="font-bold">Lorem, ipsum dolor.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <span class="font-bold">Lorem, ipsum dolor.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg text-left">
+            <span class="font-bold">Lorem, ipsum dolor.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi!
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="bg-white py-12 text-center rounded-xl shadow-lg">
+        <div class="py-10">
+          <h3 class="font-bold text-5xl">Our team is here to help you.</h3>
+          <a class="text-lg pt-5" href="#">Met our crew ></a>
+        </div>
+        <div class="bg-white place-items-center bg-gray-100 p-6">
+          <img class="rounded w-100 mx-auto" src="https://picsum.photos/id/61/1500/500" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+ <footer class="bg-white py-6 shadow-md w-full mt-4 p-6">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center px-10">
+      <div class="text-2xl font-bold">
+        <a href="#">Mamba</a>
+      </div>
+      <div class="flex space-x-6 text-lg">
+        <a href="#" class="hover:text-indigo-600"><img class="w-6 h-6" src="./Mail.svg" alt="Mail" /></a>
+        <a href="#" class="hover:text-indigo-600"><img class="w-6 h-6" src="./X.svg" alt="X" /></a>
+        <a href="#" class="hover:text-indigo-600"><img class="w-6 h-6" src="./Github.svg" alt="GitHub" /></a>
+      </div>
+    </div>
+  </footer>  
+ </html>
