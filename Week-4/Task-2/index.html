@@ -13,50 +13,47 @@
   <body class="bg-gray-100 flex flex-col min-h-screen">
 
     <!-- Header -->
-     
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md sticky top-0 z-50">
       <nav class="container max-w-8xl mx-auto p-6 flex justify-between items-center">
         <div class="flex space-x-6">
-          <a class="text-gray-700 hover:text-indigo-600 font-semibold" href="#">Home</a>
-          <a class="text-gray-700 hover:text-indigo-600 font-semibold" href="#">About</a>
-          <a class="text-gray-700 hover:text-indigo-600 font-semibold" href="#">Contact</a>
+          <a class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300" href="#">Home</a>
+          <a class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300" href="#">About</a>
+          <a class="text-gray-700 hover:text-indigo-600 font-semibold transition duration-300" href="#">Contact</a>
         </div>
         <div>
           <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Logo" />
         </div>
         <div class="flex items-center space-x-4">
           <i class="fa-solid fa-magnifying-glass text-gray-700"></i>
-          <input class="bg-gray-100 p-2 rounded" type="search" placeholder="Search.." />
-          <button class="bg-indigo-600 text-white font-bold px-6 py-2 rounded hover:bg-indigo-700 transition">Log in</button>
+          <input class="bg-gray-100 p-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-600 transition duration-300" type="search" placeholder="Search.." />
+          <button class="bg-indigo-600 text-white font-bold px-6 py-2 rounded hover:bg-indigo-700 transition duration-300">Log in</button>
         </div>
       </nav>
     </header>
 
     <!-- Article -->
-
     <article class="container max-w-4xl mx-auto p-10 text-center">
-      <h3 class="mb-10 text-6xl font-bold">
+      <h3 class="mb-10 text-6xl font-bold leading-tight">
         Quisquam necessita <br />
         vel
         <span class="text-indigo-600">laborum <br />dolribus</span> delectus
       </h3>
-      <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur.</p>
-      <p class="text-gray-700">
+      <p class="text-gray-700 text-lg mb-4">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="text-gray-700 text-lg mb-8">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
         officiis?
       </p>
-      <div class="mt-10">
-        <button class="mr-4 px-5 py-3 rounded bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition">Get Started</button>
-        <button class="px-5 py-3 rounded bg-gray-200 text-gray-700 font-bold hover:bg-gray-300 transition">Learn more</button>
+      <div class="mt-10 flex justify-center space-x-4">
+        <button class="px-5 py-3 rounded bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition duration-300">Get Started</button>
+        <button class="px-5 py-3 rounded bg-gray-200 text-gray-700 font-bold hover:bg-gray-300 transition duration-300">Learn more</button>
       </div>
     </article>
 
     <!-- Main -->
-     
     <main class="bg-white text-center py-10">
       <h3 class="font-bold text-4xl mb-10">What our customers are saying about us</h3>
       <div class="container max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
-        <div class="bg-gray-100 p-10 rounded shadow-lg">
+        <div class="bg-gray-100 p-10 rounded shadow-lg transition duration-300 hover:shadow-xl">
           <p class="text-6xl font-bold text-indigo-600 text-left">"</p>
           <p class="italic text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -64,14 +61,14 @@
           </p>
           <p class="text-6xl font-bold text-indigo-600 text-right">"</p>
           <div class="mt-6 flex flex-col items-center">
-            <img class="rounded-full mb-4" src="https://picsum.photos/id/12/80/80" alt="Customer Image" />
+            <img class="rounded-full mb-4" src="https://picsum.photos/80/80" alt="Customer Image" />
             <div class="bg-indigo-600 w-full py-4 rounded-b-lg text-white">
               <p class="font-bold">Distinctio Animi</p>
               <p class="text-gray-300 text-sm">ALIQUAM ILLUM</p>
             </div>
           </div>
         </div>
-        <div class="bg-gray-100 p-10 rounded shadow-lg">
+        <div class="bg-gray-100 p-10 rounded shadow-lg transition duration-300 hover:shadow-xl">
           <p class="text-6xl font-bold text-indigo-600 text-left">"</p>
           <p class="italic text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -79,14 +76,14 @@
           </p>
           <p class="text-6xl font-bold text-indigo-600 text-right">"</p>
           <div class="mt-6 flex flex-col items-center">
-            <img class="rounded-full mb-4" src="https://picsum.photos/id/12/80/80" alt="Customer Image" />
+            <img class="rounded-full mb-4" src="https://picsum.photos/80/80" alt="Customer Image" />
             <div class="bg-indigo-600 w-full py-4 rounded-b-lg text-white">
               <p class="font-bold">Distinctio Animi</p>
               <p class="text-gray-300 text-sm">ALIQUAM ILLUM</p>
             </div>
           </div>
         </div>
-        <div class="bg-gray-100 p-10 rounded shadow-lg">
+        <div class="bg-gray-100 p-10 rounded shadow-lg transition duration-300 hover:shadow-xl">
           <p class="text-6xl font-bold text-indigo-600 text-left">"</p>
           <p class="italic text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -94,14 +91,14 @@
           </p>
           <p class="text-6xl font-bold text-indigo-600 text-right">"</p>
           <div class="mt-6 flex flex-col items-center">
-            <img class="rounded-full mb-4" src="https://picsum.photos/id/12/80/80" alt="Customer Image" />
+            <img class="rounded-full mb-4" src="https://picsum.photos/80/80" alt="Customer Image" />
             <div class="bg-indigo-600 w-full py-4 rounded-b-lg text-white">
               <p class="font-bold">Distinctio Animi</p>
               <p class="text-gray-300 text-sm">ALIQUAM ILLUM</p>
             </div>
           </div>
         </div>
-        <div class="bg-gray-100 p-10 rounded shadow-lg">
+        <div class="bg-gray-100 p-10 rounded shadow-lg transition duration-300 hover:shadow-xl">
           <p class="text-6xl font-bold text-indigo-600 text-left">"</p>
           <p class="italic text-gray-700">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -109,7 +106,7 @@
           </p>
           <p class="text-6xl font-bold text-indigo-600 text-right">"</p>
           <div class="mt-6 flex flex-col items-center">
-            <img class="rounded-full mb-4" src="https://picsum.photos/id/12/80/80" alt="Customer Image" />
+            <img class="rounded-full mb-4" src="https://picsum.photos/80/80" alt="Customer Image" />
             <div class="bg-indigo-600 w-full py-4 rounded-b-lg text-white">
               <p class="font-bold">Distinctio Animi</p>
               <p class="text-gray-300 text-sm">ALIQUAM ILLUM</p>
@@ -119,25 +116,25 @@
       </div>
     </main>
 
-    <!-- Form -->
+    <!-- Contact Us -->
 
-    <section class="container max-w-lg mx-auto my-20 p-10 bg-white rounded shadow-md">
+    <section class="container max-w-md mx-auto my-20 p-10 bg-white rounded shadow-md">
       <h4 class="mb-6 text-4xl font-bold text-center">Contact us</h4>
       <form class="space-y-6">
         <div>
           <label class="block font-semibold" for="name">Name</label>
-          <input class="w-full p-3 rounded border border-gray-300" type="text" id="name" placeholder="Your name">
+          <input class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition duration-300" type="text" id="name" placeholder="Your name">
         </div>
         <div>
           <label class="block font-semibold" for="email">Email</label>
-          <input class="w-full p-3 rounded border border-gray-300" type="email" id="email" placeholder="Your email">
+          <input class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition duration-300" type="email" id="email" placeholder="Your email">
         </div>
         <div>
           <label class="block font-semibold" for="textarea">Message</label>
-          <textarea class="w-full p-3 rounded border border-gray-300" name="textarea" id="textarea" cols="30" rows="5" placeholder="Message"></textarea>
+          <textarea class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition duration-300" name="textarea" id="textarea" cols="30" rows="5" placeholder="Message"></textarea>
         </div>
         <div class="text-center">
-          <input class="bg-indigo-600 text-white font-bold px-6 py-3 rounded hover:bg-indigo-700 transition w-full" type="submit" value="Send">
+          <input class="bg-indigo-600 text-white font-bold px-6 py-3 rounded hover:bg-indigo-700 transition duration-300 w-full" type="submit" value="Send">
         </div>
       </form>
     </section>
@@ -147,18 +144,18 @@
     <footer class="bg-white py-6 shadow-md mt-auto">
       <div class="container max-w-8xl mx-auto flex justify-between items-center">
         <ul class="flex space-x-6 text-lg font-semibold">
-          <li><a class="hover:text-indigo-600" href="#">Shop</a></li>
-          <li><a class="hover:text-indigo-600" href="#">About</a></li>
-          <li><a class="hover:text-indigo-600" href="#">Blog</a></li>
-          <li><a class="hover:text-indigo-600" href="#">Pricing</a></li>
-          <li><a class="hover:text-indigo-600" href="#">Contact</a></li>
+          <li><a class="hover:text-indigo-600 transition duration-300" href="#">Shop</a></li>
+          <li><a class="hover:text-indigo-600 transition duration-300" href="#">About</a></li>
+          <li><a class="hover:text-indigo-600 transition duration-300" href="#">Blog</a></li>
+          <li><a class="hover:text-indigo-600 transition duration-300" href="#">Pricing</a></li>
+          <li><a class="hover:text-indigo-600 transition duration-300" href="#">Contact</a></li>
         </ul>
         <ul class="flex space-x-4">
-          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition" href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition" href="#"><i class="fa-brands fa-google"></i></a></li>
+          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition duration-300" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition duration-300" href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition duration-300" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition duration-300" href="#"><i class="fa-brands fa-google"></i></a></li>
+          <li><a class="p-2 text-xl text-white bg-indigo-600 rounded-full hover:shadow-lg hover:text-indigo-100 transition duration-300" href="#"><i class="fa-brands fa-pinterest"></i></a></li>
         </ul>
       </div>
     </footer>
