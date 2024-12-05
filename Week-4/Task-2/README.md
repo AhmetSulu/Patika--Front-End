@@ -4,22 +4,32 @@ This is a simple review page built with HTML, Tailwind CSS, and Font Awesome. Th
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
+- Installation
+- Usage
+- Features
+- Contributing
+- License
 
 ## Installation
 
-To get started, clone the repository and open the `index.html` file in your browser.
+To get started, clone the repository and open the 
+
+index.html
+
+ file in your browser.
 
 ```sh
-git https://github.com/AhmetSulu/Patika--Front-End/tree/main/Week-4/Task-2
+git clone https://github.com/AhmetSulu/Patika--Front-End.git
+cd Patika--Front-End/Week-4/Task-2
+```
 
 ## Usage
 
-Open the `index.html` file in your browser to view the page.
+Open the 
+
+index.html
+
+ file in your browser to view the page.
 
 ## Features
 
