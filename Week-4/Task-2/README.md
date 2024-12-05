@@ -12,11 +12,7 @@ This is a simple review page built with HTML, Tailwind CSS, and Font Awesome. Th
 
 ## Installation
 
-To get started, clone the repository and open the 
-
-index.html
-
- file in your browser.
+To get started, clone the repository and open the `index.html` file in your browser.
 
 ```sh
 git clone https://github.com/AhmetSulu/Patika--Front-End.git
