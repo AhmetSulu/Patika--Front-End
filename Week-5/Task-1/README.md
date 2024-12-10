@@ -26,6 +26,11 @@ This is a simple, interactive web application built with HTML, CSS, and JavaScri
 Feel free to modify the styling, add more features, or adapt the greeting logic to suit your needs!
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/bae80ab2-c7e4-4cc8-b37d-ee348f8c27ac)
+
+![image](https://github.com/user-attachments/assets/16346519-5aca-47c1-b5fe-ba9c319d7a21)
+
+
 
 
 ## Author

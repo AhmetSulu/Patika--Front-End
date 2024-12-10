@@ -24,7 +24,7 @@ An interactive web-based drum kit that allows users to play sounds by pressing k
 - CSS3
 - Vanilla JavaScript
 
-### Live Site
+## Live Site
 [Drum Kit Project](https://your-github-username.github.io/drum-kit)
 
 ![image](https://github.com/user-attachments/assets/3dfacad5-32e9-48c3-8441-07d3e239808e)
