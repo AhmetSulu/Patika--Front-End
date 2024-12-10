@@ -4,21 +4,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2b2929;
+    background-color: #f0f0f0;
     margin: 0;
     text-align: center;
 }
+
 .container {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 input {
     padding: 10px;
     margin: 10px 0;
     width: 250px;
 }
+
 #greeting, #dateTime {
     margin-top: 20px;
     color: #333;
