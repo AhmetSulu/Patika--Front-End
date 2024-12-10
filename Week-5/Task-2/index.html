@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./Sounds/drum.png" alt="A beautiful image" class="responsive-image" />
+        <div class="drum-kit">
+            <button data-key="KeyA" class="drum-key">A<br>Kick</button>
+            <button data-key="KeyS" class="drum-key">S<br>Snare</button>
+            <button data-key="KeyD" class="drum-key">D<br>Hi-Hat</button>
+            <button data-key="KeyF" class="drum-key">F<br>Tom</button>
+            <button data-key="KeyG" class="drum-key">G<br>Clap</button>
+            <button data-key="KeyH" class="drum-key">H<br>Ride</button>
+            <button data-key="KeyJ" class="drum-key">J<br>Tink</button>
+        </div>
+    </div>
+
+    <audio data-key="KeyA" src="sounds/kick.wav"></audio>
+    <audio data-key="KeyS" src="sounds/snare.wav"></audio>
+    <audio data-key="KeyD" src="sounds/hihat.wav"></audio>
+    <audio data-key="KeyF" src="sounds/tom.wav"></audio>
+    <audio data-key="KeyG" src="sounds/clap.wav"></audio>
+    <audio data-key="KeyH" src="sounds/ride.wav"></audio>
+    <audio data-key="KeyJ" src="sounds/tink.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
