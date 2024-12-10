@@ -26,7 +26,7 @@ This is a simple, interactive web application built with HTML, CSS, and JavaScri
 Feel free to modify the styling, add more features, or adapt the greeting logic to suit your needs!
 
 ## Screenshots
-[You can add screenshots here if you have any]
+
 
 ## Author
-[AhmetSulu]
+Ahmet Sulu
