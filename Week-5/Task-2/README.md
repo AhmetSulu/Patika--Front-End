@@ -27,7 +27,8 @@ An interactive web-based drum kit that allows users to play sounds by pressing k
 ### Live Site
 [Drum Kit Project](https://your-github-username.github.io/drum-kit)
 
-![Project Screenshot](https://hizliresim.com/q9xqfli)
+![image](https://github.com/user-attachments/assets/3dfacad5-32e9-48c3-8441-07d3e239808e)
+
 
 ## Setup
 1. Clone the repository
