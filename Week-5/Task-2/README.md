@@ -25,12 +25,12 @@ An interactive web-based drum kit that allows users to play sounds by pressing k
 - Vanilla JavaScript
 
 ## Live Site
-[Drum Kit Project](https://your-github-username.github.io/drum-kit)
+[Drum Kit Live Link](https://ahmetsulu.github.io/Drum/)
 
 ![image](https://github.com/user-attachments/assets/3dfacad5-32e9-48c3-8441-07d3e239808e)
 
 
 ## Setup
 1. Clone the repository
-2. Open `index.html` in your browser
+2. Open `index.html` in your browser.
 3. Start making music!
