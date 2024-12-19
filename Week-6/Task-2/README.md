@@ -24,6 +24,7 @@ An elegant and responsive Asian cuisine menu web application with category filte
 
 ## Screenshots
 ![Application Screenshot](Adsız.jpg)
+![Application Screenshot](dark.jpg)
 
 
 ## Contributing
