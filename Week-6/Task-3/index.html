@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Şaka Makinesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Chuck_Norris_May_2015.jpg" alt="Chuck Norris" class="chuck-image">
+            <h1>🥊 Chuck Norris Şaka Makinesi 🥊</h1>
+        </div>
+        
+        <div id="joke-container">
+            <p id="joke-text">Chuck Norris şakasını yüklemek için butona tıklayın...</p>
+        </div>
+        
+        <div class="button-container">
+            <button id="generate-btn">
+                <i class="fas fa-laugh-beam"></i> Başka Bir Şaka
+            </button>
+            <button id="copy-btn">
+                <i class="fas fa-copy"></i> Şakayı Kopyala
+            </button>
+            <button id="share-btn">
+                <i class="fas fa-share-alt"></i> Paylaş
+            </button>
+        </div>
+
+        <div id="social-share" class="hidden">
+            <a href="#" class="social-icon" id="twitter-share"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" id="whatsapp-share"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon" id="facebook-share"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <div id="notification" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
