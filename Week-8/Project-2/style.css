@@ -1,0 +1,426 @@
+/* Modern Design System */
+:root {
+    --primary-color: #6366f1;
+    --primary-hover: #4f46e5;
+    --secondary-color: #ec4899;
+    --background-light: #f8fafc;
+    --background-dark: #0f172a;
+    --text-primary-light: #1e293b;
+    --text-secondary-light: #64748b;
+    --text-primary-dark: #e2e8f0;
+    --text-secondary-dark: #94a3b8;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #1e293b;
+    --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --card-shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --transition-base: 0.2s ease-in-out;
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --navbar-blur: 12px;
+    --border-radius-base: 0.5rem;
+    --border-radius-lg: 1rem;
+  }
+  
+  /* Base Styles */
+  body {
+    background-color: var(--background-light);
+    color: var(--text-primary-light);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Modern Navbar */
+  .navbar {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(var(--navbar-blur));
+    -webkit-backdrop-filter: blur(var(--navbar-blur));
+    border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-link {
+    position: relative;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary-light) !important;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    transition: var(--transition-smooth);
+    transform: translateX(-50%);
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 80%;
+  }
+  
+  /* Modern Search Bar */
+  .search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    padding-left: 3rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius-lg);
+    background: var(--card-bg-light);
+    transition: var(--transition-base);
+    font-size: 1rem;
+  }
+  
+  .search-container .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary-light);
+  }
+  
+  .search-container input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  }
+  
+  /* Modern Category Filters */
+  .category-filters {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  .category-filters button {
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--border-radius-base);
+    font-weight: 500;
+    transition: var(--transition-base);
+    border: 1px solid #e2e8f0;
+    background: var(--card-bg-light);
+  }
+  
+  .category-filters button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .category-filters button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  /* Modern Movie Cards */
+  .card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    background: var(--card-bg-light);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-smooth);
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .card-img-wrapper {
+    position: relative;
+    padding-top: 150%;
+    overflow: hidden;
+}
+  
+  .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary-light);
+  }
+  
+  .movie-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    color: var(--text-secondary-light);
+    font-size: 0.875rem;
+  }
+  
+  .movie-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  /* Modern Buttons */
+  .btn-primary {
+    background: var(--primary-color);
+    border: none;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    border-radius: var(--border-radius-base);
+    transition: var(--transition-base);
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+  }
+  
+  .favorite-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    transition: var(--transition-base);
+  }
+  
+  .favorite-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  
+  .favorite-btn.active {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }
+  
+  /* Modern Notifications */
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  /* Movie detail page styles */
+#movieDetail {
+    padding: 2rem 0;
+}
+
+#movieDetail .col-md-4 {
+    position: relative;
+}
+
+#movieImage {
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-smooth);
+}
+
+#movieImage:hover {
+    transform: scale(1.02);
+}
+
+.movie-info-detail {
+    background: var(--card-bg-light);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--card-shadow);
+}
+
+#movieTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.movie-meta-badges {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.meta-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--background-light);
+    border-radius: var(--border-radius-base);
+    font-weight: 500;
+    color: var(--text-primary-light);
+}
+
+.meta-badge i {
+    color: var(--primary-color);
+}
+
+#movieDescription {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: var(--text-secondary-light);
+    margin: 1.5rem 0;
+}
+
+.favorite-btn-detail {
+    position: absolute;
+    top: 32rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    z-index: 10;
+}
+
+.favorite-btn-detail:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+.favorite-btn-detail i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: transform var(--transition-base);
+}
+
+.favorite-btn-detail:hover i {
+    transform: scale(1.1);
+}
+
+.favorite-btn-detail.active {
+    background: var(--secondary-color);
+}
+
+.favorite-btn-detail.active i {
+    color: white;
+}
+
+/* Theme Toggle */
+#themeToggle i.fa-sun {
+    color: #fbbf24;
+}
+
+#themeToggle i.fa-moon {
+    color: #60a5fa;
+}
+
+/* Dark Mode Classes */
+html.dark {
+    --background-light: var(--background-dark);
+    --text-primary-light: var(--text-primary-dark);
+    --text-secondary-light: var(--text-secondary-dark);
+    --card-bg-light: var(--card-bg-dark);
+ }
+ 
+ html.dark body {
+    background-color: var(--background-dark);
+    color: var(--text-primary-dark);
+ }
+ 
+ html.dark .navbar {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+ }
+ 
+ html.dark .nav-link {
+    color: var(--text-primary-dark) !important;
+ }
+ 
+ html.dark .card {
+    background: var(--card-bg-dark);
+ }
+ 
+ html.dark .card-title {
+    color: var(--text-primary-dark);
+ }
+ 
+ html.dark .movie-info {
+    color: var(--text-secondary-dark);
+ }
+ 
+ html.dark .search-container input,
+ html.dark .category-filters button {
+    background: var(--card-bg-dark);
+    border-color: #334155;
+    color: var(--text-primary-dark);
+ }
+ 
+ html.dark .notification {
+    background: var(--card-bg-dark);
+    color: var(--text-primary-dark);
+ }
+ 
+ html.dark .meta-badge {
+    background: var(--card-bg-dark);
+    color: var(--text-primary-dark);
+ }
+ 
+ html.dark #movieDescription {
+    color: var(--text-secondary-dark);
+ }
+ 
+ html.dark .favorite-btn-detail {
+    background: rgba(30, 41, 59, 0.9);
+ }
+ 
+ html.dark .favorite-btn-detail:hover {
+    background: var(--card-bg-dark);
+ }

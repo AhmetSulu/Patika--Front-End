@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-film me-2"></i>FilmPlatform
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fas fa-home me-1"></i>Home Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorites.html">
+                        <i class="fas fa-heart me-1"></i>My Favorites
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="themeToggle" class="nav-link">
+                        <i class="fas fa-moon me-1"></i>Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Search Bar -->
+        <div class="search-container mb-4">
+            <input type="text" id="searchInput" class="form-control" 
+                   placeholder="Search for movies, directors or actors...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Filters and Sorting -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="category-filters">
+                    <button class="btn btn-outline-primary active" data-category="all">All</button>
+                    <button class="btn btn-outline-primary" data-category="action">Action</button>
+                    <button class="btn btn-outline-primary" data-category="drama">Drama</button>
+                    <button class="btn btn-outline-primary" data-category="comedy">Comedy</button>
+                    <button class="btn btn-outline-primary" data-category="crime">Crime</button>
+                    <button class="btn btn-outline-primary" data-category="sci-fi">Sci-Fi</button>
+                    <button class="btn btn-outline-primary" data-category="adventure">Adventure</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sort-container">
+                    <select id="sortSelect" class="form-select">
+                        <option value="">Select Sorting</option>
+                        <option value="title">By Title</option>
+                        <option value="year">By Year</option>
+                        <option value="imdb">By IMDB Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie List -->
+        <div class="row" id="movieList">
+            <!-- Movies will be populated by JavaScript -->
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Movie Card Template -->
+    <template id="movieCardTemplate">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-img-wrapper">
+                    <img src="" class="card-img-top" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <div class="movie-info">
+                        <span><i class="fas fa-calendar-alt"></i> <span class="movie-year"></span></span>
+                        <span><i class="fas fa-star"></i> <span class="movie-imdb"></span></span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="" class="btn btn-primary">
+                            <i class="fas fa-info-circle me-1"></i>Details
+                        </a>
+                        <button class="favorite-btn" title="Add to Favorites">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Notification Template -->
+    <template id="notificationTemplate">
+        <div class="notification">
+            <i class="fas fa-info-circle me-2"></i>
+            <span class="notification-message"></span>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

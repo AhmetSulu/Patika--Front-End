@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - Movie Streaming Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-film me-2"></i>FilmPlatform
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fas fa-home me-1"></i>Home Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorites.html">
+                        <i class="fas fa-heart me-1"></i>My Favorites
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="themeToggle" class="nav-link">
+                        <i class="fas fa-moon me-1"></i>Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Favorites Content -->
+    <div class="container mt-4">
+        <h2>My Favorite Movies</h2>
+        <div class="row" id="favoritesList">
+            <!-- Favorite movies will be populated by JavaScript -->
+        </div>
+        
+        <!-- Message to show when there are no favorite movies -->
+        <div id="noFavorites" class="text-center py-5" style="display: none;">
+            <h3>You haven't added any favorite movies yet</h3>
+            <p>You can go back to the <a href="index.html">home page</a> to add your favorite movies.</p>
+        </div>
+    </div>
+
+    <!-- Movie Card Template -->
+<template id="movieCardTemplate">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="" class="btn btn-primary">
+                        <i class="fas fa-info-circle me-1"></i>Details
+                    </a>
+                    <button class="btn btn-danger remove-favorite-btn" title="Remove from Favorites">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
