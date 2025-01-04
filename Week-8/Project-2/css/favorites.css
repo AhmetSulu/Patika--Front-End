@@ -16,7 +16,7 @@
     overflow: hidden;
     transition: var(--transition-smooth);
     box-shadow: var(--card-shadow);
-    position: relative; /* Ekledim - absolute konumlandırma için */
+    position: relative;
   }
   
   .favorite-card:hover {
@@ -32,7 +32,7 @@
   
   .favorite-content {
     padding: 1.5rem;
-    padding-bottom: 4rem; /* Ekledim - buton için alan */
+    padding-bottom: 4rem;
   }
   
   .favorite-title {
@@ -48,7 +48,6 @@
     margin-bottom: 1rem;
   }
   
-  /* Güncellenen favori buton stilleri */
   .favorite-btn {
     position: absolute;
     bottom: 1rem;
@@ -84,24 +83,5 @@
   }
   
   .favorite-btn.active i {
-    color: white;
-  }
-  
-  /* Dark mode için favori buton stilleri */
-  html.dark .favorite-btn {
-    background: var(--card-bg-dark);
-    border-color: var(--border-dark);
-    color: var(--text-primary-dark);
-  }
-  
-  html.dark .favorite-btn:hover {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-    background: rgba(236, 72, 153, 0.1);
-  }
-  
-  html.dark .favorite-btn.active {
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
     color: white;
   }
