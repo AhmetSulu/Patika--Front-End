@@ -1,0 +1,133 @@
+/* darktheme.css */
+:root {
+    --background-dark: #0f172a;
+    --card-bg-dark: #1e293b;
+    --text-primary-dark: #e2e8f0;
+    --text-secondary-dark: #94a3b8;
+    --border-dark: #334155;
+  }
+  
+  #themeToggle i.fa-sun {
+    color: #fbbf24;
+  }
+  
+  #themeToggle i.fa-moon {
+    color: #60a5fa;
+  }
+  
+  /* Dark Mode Base */
+  html.dark {
+    --background-light: var(--background-dark);
+    --text-primary-light: var(--text-primary-dark);
+    --text-secondary-light: var(--text-secondary-dark);
+    --card-bg-light: var(--card-bg-dark);
+  }
+  
+  html.dark body {
+    background-color: var(--background-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  /* Dark Mode - Header */
+  html.dark .navbar {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+  }
+  
+  html.dark .nav-link {
+    color: var(--text-primary-dark) !important;
+  }
+  
+  /* Dark Mode - Footer */
+  html.dark .footer {
+    background: var(--card-bg-dark);
+    border-top: 1px solid var(--border-dark);
+  }
+  
+  html.dark .footer-links h5 {
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .footer-links a,
+  html.dark .footer-description,
+  html.dark .footer-bottom {
+    color: var(--text-secondary-dark);
+  }
+  
+  html.dark .footer-social a {
+    background: var(--background-dark);
+    color: var(--text-secondary-dark);
+  }
+  
+  /* Dark Mode - Index */
+  html.dark .search-container input {
+    background: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .search-container input::placeholder {
+    color: var(--text-secondary-dark);
+  }
+  
+  html.dark .search-icon {
+    color: var(--text-secondary-dark);
+  }
+  
+  html.dark .category-filters button {
+    background: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .category-filters button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.1);
+  }
+  
+  html.dark .category-filters button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+  html.dark .card-title {
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .card-text,
+  html.dark .movie-info {
+    color: var(--text-secondary-dark);
+  }
+  
+  /* Dark Mode - Favorites */
+  html.dark .favorite-card {
+    background: var(--card-bg-dark);
+  }
+  
+  html.dark .favorite-title {
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .favorite-meta {
+    color: var(--text-secondary-dark);
+  }
+
+  html.dark .favorite-btn {
+    background: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .favorite-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background: rgba(236, 72, 153, 0.1);
+  }
+  
+  html.dark .favorite-btn.active {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }

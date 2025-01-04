@@ -1,0 +1,107 @@
+/* favorites.css */
+.favorites-container {
+    padding: 2rem 0;
+  }
+  
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .favorite-card {
+    background: var(--card-bg-light);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    box-shadow: var(--card-shadow);
+    position: relative; /* Ekledim - absolute konumlandırma için */
+  }
+  
+  .favorite-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+  }
+  
+  .favorite-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .favorite-content {
+    padding: 1.5rem;
+    padding-bottom: 4rem; /* Ekledim - buton için alan */
+  }
+  
+  .favorite-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary-light);
+  }
+  
+  .favorite-meta {
+    color: var(--text-secondary-light);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Güncellenen favori buton stilleri */
+  .favorite-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--card-bg-light);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius-base);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-base);
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .favorite-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  
+  .favorite-btn i {
+    color: var(--secondary-color);
+    font-size: 1rem;
+  }
+  
+  .favorite-btn.active {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .favorite-btn.active i {
+    color: white;
+  }
+  
+  /* Dark mode için favori buton stilleri */
+  html.dark .favorite-btn {
+    background: var(--card-bg-dark);
+    border-color: var(--border-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  html.dark .favorite-btn:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    background: rgba(236, 72, 153, 0.1);
+  }
+  
+  html.dark .favorite-btn.active {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }
