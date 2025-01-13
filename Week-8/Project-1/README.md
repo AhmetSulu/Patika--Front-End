@@ -29,26 +29,6 @@ A responsive, modern website for a fitness center featuring class schedules, BMI
 - AOS (Animate On Scroll)
 - Google Maps API
 
-## CSS Structure
-
-```
-main.css
-├── common.css       # Global styles and variables
-├── vendor.css       # Third-party styles
-├── layouts/
-│   ├── header.css   # Navigation styles
-│   └── footer.css   # Footer styles
-└── sections/
-    ├── hero.css     # Hero section
-    ├── stats.css    # Statistics section
-    ├── bmi.css      # BMI calculator
-    ├── classes.css  # Class schedules
-    ├── trainers.css # Trainer profiles
-    ├── products.css # Shop section
-    ├── review.css   # Testimonials
-    └── contact.css  # Contact form
-```
-
 ## Installation
 
 1. Clone the repository
