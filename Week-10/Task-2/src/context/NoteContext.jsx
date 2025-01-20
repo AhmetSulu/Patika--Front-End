@@ -4,14 +4,22 @@ import { INITIAL_NOTE_STATE, LOCAL_STORAGE_KEY } from '../utils/constants';
 const NoteContext = createContext();
 
 const noteReducer = (state, action) => {
+  let updatedNotes;
+  
   switch (action.type) {
     case 'ADD_NOTE':
-      const newNotes = [...state.notes, action.payload];
-      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newNotes));
-      return {
-        ...state,
-        notes: newNotes
-      };
+      updatedNotes = [...state.notes, action.payload];
+      break;
+      
+    case 'DELETE_NOTE':
+      updatedNotes = state.notes.filter(note => note.id !== action.payload);
+      break;
+      
+    case 'UPDATE_NOTE':
+      updatedNotes = state.notes.map(note =>
+        note.id === action.payload.id ? action.payload : note
+      );
+      break;
       
     case 'SET_COLOR':
       return {
@@ -34,6 +42,16 @@ const noteReducer = (state, action) => {
     default:
       return state;
   }
+  
+  if (updatedNotes) {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(updatedNotes));
+    return {
+      ...state,
+      notes: updatedNotes
+    };
+  }
+  
+  return state;
 };
 
 export const NoteProvider = ({ children }) => {

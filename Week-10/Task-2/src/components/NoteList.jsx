@@ -1,4 +1,5 @@
 import { useNoteContext } from '../context/NoteContext';
+import { NoteCard } from './NoteCard';
 
 export const NoteList = () => {
   const { state } = useNoteContext();
@@ -11,14 +12,7 @@ export const NoteList = () => {
     <div className="notes-grid-container">
       <div className="notes-grid">
         {filteredNotes.map(note => (
-          <div
-            key={note.id}
-            className="note-card"
-            style={{ backgroundColor: note.color }}
-          >
-            <p className="note-text">{note.text}</p>
-            <span className="note-date">{note.date}</span>
-          </div>
+          <NoteCard key={note.id} note={note} />
         ))}
       </div>
     </div>
