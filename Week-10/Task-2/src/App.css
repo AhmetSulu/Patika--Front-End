@@ -1,0 +1,220 @@
+/* App.css */
+:root {
+  /* Colors */
+  --primary: #40c057;
+  --primary-hover: #37b24d;
+  --pink: #ff6b6b;
+  --purple: #cc5de8;
+  --yellow: #ffd43b;
+  --blue: #339af0;
+  --green: #8ce99a;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #333;
+  --text-secondary: #6b7280;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.04), 0 4px 6px rgba(0, 0, 0, 0.08);
+  
+  /* Transitions */
+  --transition: 0.2s ease;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --background: #1a1b1e;
+  --surface: #2d2d2d;
+  --text: #e2e8f0;
+  --text-secondary: #a0aec0;
+}
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background);
+  padding: 2rem;
+}
+
+/* Notes Wrapper */
+.notes-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+/* App Title */
+.app-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 100px;
+  background: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: var(--shadow);
+}
+
+/* Note Form */
+.note-form {
+  margin-bottom: 2rem;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.note-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 1rem;
+  min-height: 100px;
+}
+
+.note-form textarea:focus {
+  outline: none;
+}
+
+/* Form Footer */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Color Picker */
+.color-picker {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.color-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0;
+}
+
+.color-button:hover {
+  transform: scale(1.1);
+}
+
+.color-button.selected {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary);
+}
+
+/* Add Button */
+.submit-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Notes Grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* Note Card */
+.note-card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.note-text {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.note-date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg);
+}
