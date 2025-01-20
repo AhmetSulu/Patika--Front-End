@@ -11,7 +11,6 @@ A modern and user-friendly note-taking application. Built with React, this app a
 - 🔍 Real-time note search
 - 💾 Automatic local storage
 - 🌓 Dark/Light theme support
-- 📱 Responsive design
 
 ## Technologies
 
@@ -27,7 +26,7 @@ To run this application locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/notes-app.git
+git clone https://github.com/username/
 
 # Navigate to project directory
 cd notes-app
@@ -102,22 +101,6 @@ notes-app/
 - System-wide color scheme
 - Persistent theme preference
 
-## Development
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Running Tests
-```bash
-npm run test
-```
-
-### Building for Production
-```bash
-npm run build
-```
-
 ## Contributing
 
 1. Fork the repository
@@ -125,16 +108,6 @@ npm run build
 3. Commit your changes (`git commit -m 'feat: Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## Commit Guidelines
-
-We follow conventional commits specification:
-- `feat:` for new features
-- `fix:` for bug fixes
-- `docs:` for documentation changes
-- `style:` for code style changes
-- `refactor:` for code refactoring
-- `test:` for adding or updating tests
 
 ## Contact
 
