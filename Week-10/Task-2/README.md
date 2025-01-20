@@ -2,7 +2,9 @@
 
 A modern and user-friendly note-taking application. Built with React, this app allows you to organize your notes in colorful cards with a clean interface.
 
-![Notes App Live](https://extraordinary-ganache-73c453.netlify.app/)
+## 🚀 [Live Demo](https://extraordinary-ganache-73c453.netlify.app/)
+
+![Notes App Screenshot](/api/placeholder/800/400)
 
 ## Features
 
