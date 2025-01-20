@@ -33,21 +33,21 @@ src/
 └── main.jsx
 ```
 
-## Setup
+## Installation
 
-1. Clone the repository:
-```bash
-git clone [repository-url]
-cd spend-gates-money
-```
+To run this application locally:
 
-2. Install dependencies:
 ```bash
+# Clone the repository
+git clone https://github.com/username/
+
+# Navigate to project directory
+cd BillGatesApp
+
+# Install dependencies
 npm install
-```
 
-3. Start the development server:
-```bash
+# Start the application
 npm run dev
 ```
 
