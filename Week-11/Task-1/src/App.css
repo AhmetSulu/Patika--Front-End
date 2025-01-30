@@ -1,0 +1,334 @@
+/* Quiz Container */
+.quiz-container {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  transition: transform 0.2s ease;
+}
+
+/* Question Styles */
+.question-container {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.question-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 0.25rem);
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.question-image:hover {
+  transform: scale(1.02);
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.option-button {
+  position: relative;
+  width: 100%;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: calc(var(--radius) - 0.25rem);
+  font-size: 1rem;
+  text-align: left;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  border-color: var(--primary);
+  background: #F5F7FF;
+  transform: translateY(-1px);
+}
+
+.option-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.option-button.selected {
+  border-color: var(--primary);
+  background: #F5F7FF;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: #F5F7FF;
+  padding: 0.5rem 1rem;
+  border-radius: calc(var(--radius) - 0.5rem);
+}
+
+/* Results Section */
+.results-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem;
+}
+
+.results-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+
+.results-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: calc(var(--radius) - 0.5rem);
+  transition: transform 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateX(4px);
+}
+
+.result-correct {
+  background: #F0FDF4;
+  border: 1px solid #86EFAC;
+  color: var(--success);
+}
+
+.result-wrong {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: var(--error);
+}
+
+.result-empty {
+  background: #F3F4F6;
+  border: 1px solid var(--border);
+  color: var(--neutral);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: calc(var(--radius) - 0.5rem);
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Loading State */
+.options-loading {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  background: #F9FAFB;
+  border-radius: var(--radius);
+  border: 2px dashed var(--border);
+}
+
+/* Locale Selector */
+.locale-selector {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.locale-select {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: calc(var(--radius) - 0.5rem);
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.locale-select:hover {
+  border-color: var(--primary);
+}
+
+.locale-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Countdown */
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: var(--background);
+  border-radius: var(--radius);
+  border: 2px dashed var(--border);
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.countdown-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Answer Style */
+.answer-review {
+  margin-top: 3rem;
+  border-top: 2px solid var(--border);
+  padding-top: 2rem;
+}
+
+.answer-review-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.answer-review-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 0.25rem);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.question-number {
+  font-weight: 600;
+  color: var(--primary);
+  margin-right: 0.75rem;
+}
+
+.answers-container {
+  display: grid;
+  gap: 1rem;
+  background: var(--background);
+  padding: 1rem;
+  border-radius: calc(var(--radius) - 0.5rem);
+  margin-bottom: 1rem;
+}
+
+.user-answer,
+.correct-answer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.answer-label {
+  font-weight: 500;
+  color: var(--text-secondary);
+  min-width: 120px;
+}
+
+.answer-text {
+  padding: 0.5rem 1rem;
+  border-radius: calc(var(--radius) - 0.75rem);
+  font-weight: 500;
+}
+
+.answer-text.correct {
+  background: #F0FDF4;
+  color: var(--success);
+}
+
+.answer-text.wrong {
+  background: #FEF2F2;
+  color: var(--error);
+}
+
+.question-review-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 0.25rem);
+  margin-top: 1rem;
+}

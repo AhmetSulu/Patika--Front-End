@@ -1,0 +1,21 @@
+{
+    "quizTitle": "General Knowledge Quiz",
+    "startButton": "Start Quiz",
+    "nextButton": "Next Question",
+    "timeLeft": "Time Left",
+    "seconds": "seconds",
+    "question": "Question",
+    "optionsWillAppear": "Options will appear in {seconds} seconds...",
+    "introRule1": "The test consists of 10 questions.",
+    "introRule2": "You have 30 seconds for each question.",
+    "introRule3": "Answer options will appear after 4 seconds.",
+    "introRule4": "You cannot go back to previous questions.",
+    "introRule5": "You can see your results at the end of the test.",
+    "results": {
+      "title": "Quiz Results",
+      "correct": "Correct",
+      "wrong": "Wrong",
+      "empty": "Empty"
+    },
+    "playAgain": "Play Again"
+  }

@@ -1,0 +1,95 @@
+:root {
+  --primary: #6366F1;
+  --primary-hover: #4F46E5;
+  --background: #F9FAFB;
+  --surface: #FFFFFF;
+  --text: #1F2937;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+  --success: #22C55E;
+  --error: #EF4444;
+  --neutral: #9CA3AF;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --radius: 1rem;
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container Layout */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Quiz Game Title */
+.quiz-game {
+  text-align: center;
+}
+
+.quiz-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+/* Introduction Screen */
+.intro-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.intro-content {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+}
+
+.intro-list {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.intro-list li {
+  margin: 1rem 0;
+  padding-left: 1.75rem;
+  position: relative;
+  color: var(--text);
+}
+
+.intro-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}

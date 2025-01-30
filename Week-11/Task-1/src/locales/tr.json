@@ -1,0 +1,21 @@
+{
+    "quizTitle": "Genel Kültür Testi",
+    "startButton": "Teste Başla",
+    "nextButton": "Sonraki Soru",
+    "timeLeft": "Kalan Süre",
+    "seconds": "saniye",
+    "question": "Soru",
+    "optionsWillAppear": "Seçenekler {seconds} saniye içinde görünecek...",
+    "introRule1": "Test 10 sorudan oluşmaktadır.",
+    "introRule2": "Her soru için 30 saniye süreniz bulunmaktadır.",
+    "introRule3": "Her soruda cevap şıkları 4 saniye sonra görünür olacaktır.",
+    "introRule4": "Geçmiş sorulara dönüş yapılamaz.",
+    "introRule5": "Test bitiminde sonuçlarınızı görebilirsiniz.",
+    "results": {
+      "title": "Test Sonuçları",
+      "correct": "Doğru",
+      "wrong": "Yanlış",
+      "empty": "Boş"
+    },
+    "playAgain": "Yeniden Başla"
+  }
